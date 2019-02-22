@@ -8,11 +8,6 @@ class EurostoneSpiderSpider(scrapy.Spider):
     allowed_domains = ['eurostone.vn']
     start_urls = ['http://eurostone.vn/da-marble-cam-thach/']
 
-    #location of csv file
-    custom_settings = {
-        'FEED_URI': 'data/eurostone.csv'
-    }
-
     def get_products(self, product_selector, response):
         productItem = EurostoneCrawlingProductItem()
         productItem["name"] = product_selector.xpath('./div[@class="item_img"]/a/@title').extract_first()

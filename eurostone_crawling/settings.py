@@ -94,4 +94,4 @@ IMAGES_EXPIRES = 30
 #HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
 #Export as CSV Feed
 FEED_FORMAT = "csv"
-FEED_URI = "eurostone.csv"
+FEED_URI = "data/eurostone.csv"
